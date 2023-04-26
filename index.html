@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hullu juttu bro</title>
+    <title>Each_Loops</title>
 </head>
 <body>
-    <h1>Paina nappulaa</h1>
-    <button>Camo</button>
-    
-   
-    </head>
+
+
 
     <script>
+
+let x = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log("Outer loops:", x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("Inner loops:", z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+
+// tekee looppia aina kymmeneen
+
+
+    </script>
     
-    var button = document.querySelector("button");
-
-function red(){
-	document.body.style.backgroundColor = "red";
-};
-function blue(){
-	document.body.style.backgroundColor = "blue";
-};
-
-
-button.addEventListener("click", red);
-button.addEventListener("click", blue);
-
-</script>
 </body>
 </html>
-
-
-    
