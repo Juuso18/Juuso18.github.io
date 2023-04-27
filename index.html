@@ -4,35 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Each_Loops</title>
+    <title>Guessing_Game</title>
 </head>
 <body>
+    <style>
+        body {background-color: powderblue;}
+        </style>
+    <h1>Arvaus peli</h1>
 
 
 
-    <script>
+  <script>
 
-let x = 0;
-let z = 0;
-labelCancelLoops: while (true) {
-  console.log("Outer loops:", x);
-  x += 1;
-  z = 1;
-  while (true) {
-    console.log("Inner loops:", z);
-    z += 1;
-    if (z === 10 && x === 10) {
-      break labelCancelLoops;
-    } else if (z === 10) {
-      break;
-    }
-  }
+        var arvaus = prompt("Arvaa numero 1-5")
+
+if(arvaus == 1)
+ {
+    alert("Oikea vastaus!")
+}
+else if(arvaus == 2||arvaus == 3|| arvaus == 4|| arvaus == 5) {
+    alert("Väärä vastaus. Yritä uudelleen!")
 }
 
-// tekee looppia aina kymmeneen
 
-
-    </script>
+  </script>
     
 </body>
 </html>
