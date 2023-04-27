@@ -10,24 +10,21 @@
     <style>
         body {background-color: powderblue;}
         </style>
-    <h1>Arvaus peli</h1>
+      <button onclick="guessGame()">Paina minua jos haluat pelata!</button>
 
-
-
-  <script>
-
-        var arvaus = prompt("Arvaa numero 1-5")
-
-if(arvaus == 1)
- {
-    alert("Oikea vastaus!")
+      <script>
+  function guessGame(){
+ number = Math.floor(Math.random()*11);
+document.write(number);
+var guess = prompt("Arvaa numero: ");
+do {
+guess = prompt("Arvasit väärin yritä uudelleen! Oikea numero on korkeampi!");
+if (number < guess) {
+ prompt("Arvasit väärin yritä uudelleen! Oikea numero on matalampi!");
+ } else document.write("Oikein");
+} while (guess != number);
 }
-else if(arvaus == 2||arvaus == 3|| arvaus == 4|| arvaus == 5) {
-    alert("Väärä vastaus. Yritä uudelleen!")
-}
-
-
-  </script>
+          </script>
     
 </body>
 </html>
