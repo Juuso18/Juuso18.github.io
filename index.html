@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guessing_Game</title>
+    <title>Object_Literals</title>
 </head>
 <body>
-    <style>
-        body {background-color: powderblue;}
-        </style>
-      <button onclick="guessGame()">Paina minua jos haluat pelata!</button>
 
-      <script>
-  function guessGame(){
- number = Math.floor(Math.random()*11);
-document.write(number);
-var guess = prompt("Arvaa numero: ");
-do {
-guess = prompt("Arvasit väärin yritä uudelleen! Oikea numero on korkeampi!");
-if (number < guess) {
- prompt("Arvasit väärin yritä uudelleen! Oikea numero on matalampi!");
- } else document.write("Oikein");
-} while (guess != number);
-}
-          </script>
+    <h1 id="sentence"></h1>
+    
+    
+
+    <script>
+        var person = prompt("Mikä on nimesi hyvä Herra/Rouva?")
+        var age = prompt("Minkä ikäinen olette hyvä Herra/Rouva?")
+        var food = prompt("Mikä on lempi ruokasi hyvä Herra/Rouva?")
+        
+        name = person
+        Number = age
+        String = food
+        
+
+        sentence.innerHTML = (`Hei hyvää päivää ${name} olette ${age} vuotias, teidän lempi ruokanne on ${food}`)
+
+
+        
+
+
+
+        
+
+    </script>
     
 </body>
 </html>
