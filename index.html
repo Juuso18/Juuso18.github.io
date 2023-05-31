@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikatehtävä</title>
+    <title id = "status"></title>
+    <link rel="stylesheet" href="style.css" />   
 </head>
 <body>
+    <h1>moi</h1>
+    <h2>terve</h2>
+    <p>morjest</p>
 
-    <h1>Html on varmaan ensimmäinen kieli jonka opimme ja se on mielestäni kaikista helpoin näistä kaikista! Html on oleinen osa nettisivun teossa. Htmllällä voi tehdä kaiken mitä nettisivulle haluaa tietenkin javascriptin ja mahdollisesti css:än avustuksella mutta html on kuin pohja.</h1>
+    <a href="http://google.com">googleen linkki</a>
 
-    <p>Css Seuraava koodi kieli jonka opimme oli css ja se on kanssa helppoa sanoisin että toisiksi helpoin näistä kaikista koodikielistä. Tällä nettisivulla voi muutaa kaikkea sivun olkonäkyyn liittyvää.</p>
+    <button id="nappula">Paina</button>
 
-    <h2>Seuraava koodikieli on javascript javascriptin opimme kolmantena ja tämä alkaa menemään jo vaikeaksi. Javascriptillä voi tehdä functioita ja kaikkea "automaattista" esimerkiksi laskin on tehtävissä javascriptillä.</h2>
+    <script>
+        var btn = document.querySelector("nappula")
+        btn.addEventListener('click', function(prompt){
+        prompt("Give me a word")
+    })
+        
+        
+    </script>
 
-    <h3>Neljänneksi vaikein kieli on mielestäni Python ja sitä olemme oppineet vain vähän en tiedä siitä niin paljoa mutta haluaisn oppia lisää!</h3>
 
-    <h4>Viides on lua kieli, sitä olen oppinut kotoa käsin ennen opintojen alkamista osaan perus alkeet jos ne ovat edes enään hallussa.</h4>
     
 </body>
 </html>
